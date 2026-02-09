@@ -1,3 +1,6 @@
+import java.security.spec.MGF1ParameterSpec;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -91,5 +94,132 @@ public class Main {
         System.out.println("Replace: " + st.replace('a', '-'));
         System.out.println("Equals: " + st.equals("Ciao a TUTTI!"));
 
+        // Operatori
+        // Operatore di assegnamento
+        //  =
+
+        // Operatori aritmetici
+        //  + - * / %
+
+        int n1 = 10;
+        int n2 = 3;
+
+        int r = n1/n2;
+        int resto = n1%n2;
+        System.out.println("Divisione intero: " + r + " con resto di: " + resto);
+
+        double rd = (double) n1/n2;
+        System.out.println("Divisione double: " + rd );
+
+        // Operatori aritmetici di assegnamento
+        //  += -= *= /= %=
+        int nn = 10;
+        nn = nn + 3;
+        nn += 3;
+
+        // Operatori unari di pre o post incremento e pre o post decremento
+        nn = nn + 1;
+        nn += 1;
+        nn++;
+        nn--;
+
+        int x1 = 25;
+        //int x2 = x1++; // 26 | 25
+        //int x2 = x1--; // 24 | 25
+        //int x2 = ++x1; // 26 | 26
+        int x2 = --x1; // 24 | 24
+        System.out.println(x1 + " | " + x2);
+
+        // Operatori relazionali
+        // Restituiscono sempre un valore booleano (true | false)
+        //  == != > < >= <=
+
+        int g = 25;
+        int n = 10;
+        System.out.println("25 uguale a 10: " + (g == n));
+        System.out.println("25 diverso da 10: " + (g != n));
+        System.out.println("25 maggiore di 10: " + (g > n));
+        System.out.println("25 minore di 10: " + (g < n));
+
+        // Operatori logici
+        // && || ! ^
+
+        // condizione1 && condizione2 --> true && true --> true
+        // condizione1 && condizione2 --> true && false --> false
+        // condizione1 && condizione2 --> false && true --> false
+        // condizione1 && condizione2 --> false && false --> false
+
+        // condizione1 || condizione2 --> true || true --> true
+        // condizione1 || condizione2 --> true || false --> true
+        // condizione1 || condizione2 --> false || true --> true
+        // condizione1 || condizione2 --> false || false --> false
+
+        // condizione1 ^ condizione2 --> true ^ true --> false
+        // condizione1 ^ condizione2 --> true ^ false --> true
+        // condizione1 ^ condizione2 --> false ^ true --> true
+        // condizione1 ^ condizione2 --> false ^ false --> false
+
+        // !true --> false
+        // !false --> true
+
+        // Scanner -> per interagire con l'utente nel terminale
+        // Creo un oggetto capace di leggere da terminale valori inseriti da un utente
+//        Scanner sc = new Scanner(System.in);
+//
+//        System.out.print("Inserisci il tuo nome: ");
+//        String nome = sc.nextLine();
+//        System.out.print("Inserisci la tua età: ");
+//        // int eta = sc.nextInt(); // Problematico
+//        int eta = Integer.parseInt(sc.nextLine());
+//        System.out.print("Inserisci la tua città: ");
+//        String citta = sc.nextLine();
+//
+//        System.out.println("Ciao " + nome + "(" + citta + ") età: " + eta);
+
+        // Metodi di una classe
+        // modificatori tipoDiRitorno nomeMetodo(tipoParametro nomeParametro) {
+        // blocco di istruzioni }
+        //test();
+        //String utente = testString();
+        //System.out.println(utente.toUpperCase());
+        boolean res = testArgs(50);
+        System.out.println(res);
     }
+
+    public static void test() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Inserisci il tuo nome: ");
+        String nome = sc.nextLine();
+        System.out.print("Inserisci la tua età: ");
+        // int eta = sc.nextInt(); // Problematico
+        int eta = Integer.parseInt(sc.nextLine());
+        System.out.print("Inserisci la tua città: ");
+        String citta = sc.nextLine();
+
+        System.out.println("Ciao " + nome + "(" + citta + ") età: " + eta);
+    }
+
+    public static String testString() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Inserisci il tuo nome: ");
+        String nome = sc.nextLine();
+        System.out.print("Inserisci la tua età: ");
+        // int eta = sc.nextInt(); // Problematico
+        int eta = Integer.parseInt(sc.nextLine());
+        System.out.print("Inserisci la tua città: ");
+        String citta = sc.nextLine();
+        return  "Ciao " + nome + "(" + citta + ") età: " + eta;
+    }
+
+    public static boolean testArgs(int age) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Inserisci la tua età: ");
+        int eta = Integer.parseInt(sc.nextLine());
+
+        return  eta > age;
+    }
+
 }
