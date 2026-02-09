@@ -1,0 +1,25 @@
+Esercizio 1 – Variabili, tipi primitivi e casting
+Dichiarare le seguenti variabili: int, double, long, float
+Assegnare valori numerici coerenti
+Effettuare:
+ - Un casting implicito
+ - Due casting espliciti
+ - Stampare i risultati a console
+
+Esercizio 2 – Costanti, String e metodi principali
+Dichiarare una costante MAX_LENGTH con valore 20
+Dichiarare una stringa con spazi iniziali e finali
+Applicare i seguenti metodi:
+ - length()
+ - trim()
+ - toUpperCase()
+ - equals()
+ - Stampare i risultati
+
+Esercizio 3 – Conversione String ↔ numeri e gestione errori
+Dichiarare una stringa numerica
+Convertirla in:
+ - int
+ - double
+ - Stampare i risultati
+ - Tentare una conversione errata e gestire l’eccezione
