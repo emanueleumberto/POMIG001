@@ -1,5 +1,6 @@
 package Esercizio;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Soluzione {
@@ -64,7 +65,24 @@ public class Soluzione {
 //        double miaDivisione = dividi();
 //        conctena(miaSomma, miaMoltipicazione, miaSottrazione, miaDivisione);
 
-        conctena(somma(), moltiplica(), sottrai(), dividi());
+        // conctena(somma(), moltiplica(), sottrai(), dividi());
+
+        System.out.println("*************************************************************");
+
+        // Esercizio 5 - Strutture di controllo e strutture iterative
+
+        // boolean b = stringaPariDispari();
+        // System.out.println("Numero di caratteri pari: " + b);
+        // boolean bis = annoBisestile();
+        // System.out.println("Anno bisestile: " + bis);
+
+        stampaMese(LocalDate.now());
+        stampaStagione(LocalDate.of(2025,3,25));
+
+        // suddividiStringa(inserisciStringa());
+
+        // contoAllaRovescia();
+        popolaArray();
     }
 
     public static int somma() {
@@ -115,5 +133,163 @@ public class Soluzione {
         System.out.println("     - Moltiplicazione: " + moltiplica);
         System.out.println("     - Sottrazione: " + sottrai);
         System.out.println("     - Divisione: " + dividi);
+    }
+
+    public static boolean stringaPariDispari() {
+        //stringaPariDispari  -> Chiede ad un utente una stringa, ritorna true se il numero dei caratteri
+        //è pari altrimenti deve ritornare false
+        System.out.print("Inserisci una stringa: ");
+        String str = sc.nextLine();
+        //return str.length() % 2 == 0;
+        if(str.length() % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean annoBisestile() {
+//        annoBisestile -> Chiede ad un utente un anno, ritorna true se è un anno bisestile
+//        altrimenti deve ritornare false
+//        (Per essere un anno bisestile deve essere divisibile per 4,
+//                qualora sia divisibile per 100 deve essere anche divisibile per 400)
+
+        System.out.print("Inserisci anno: ");
+        int anno = Integer.parseInt(sc.nextLine());
+        if(anno % 400 == 0) {
+            return true;
+        } else if(anno % 4 == 0 && anno % 100 != 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void stampaMese(LocalDate obj) {
+        // stampaMese -> passare un oggetto di tipo LocalDate come paramentro del metodo e stampare a video
+        //                            la data completa nel seguente formato (11 - Febbraio - 2025)
+
+        //System.out.println(obj);
+        int day = obj.getDayOfMonth();
+        String month = obj.getMonth().toString();
+        int year = obj.getYear();
+
+        switch (month) {
+            case "FEBRUARY": month = "Febbraio"; break;
+            case "MARCH": month = "Marzo"; break;
+            default: month = "----"; break;
+        }
+
+        System.out.println(day + " - " + month + " - " + year);
+    }
+
+    public static void stampaStagione(LocalDate obj) {
+        //stampaStagione -> passare un oggetto di tipo LocalDate come paramentro del metodo
+        // e stampare a video la stagione corrispondente
+        switch (obj.getMonthValue()) {
+            case 12,1,2:
+                System.out.println("Inverno");
+                break;
+            case 3,4,5:
+                System.out.println("Primavera");
+                break;
+            case 6,7,8:
+                System.out.println("Estate");
+                break;
+            case 9,10,11:
+                System.out.println("Autunno");
+                break;
+            default:
+                System.out.println("Errore!!");
+                break;
+        }
+    }
+
+    public static String inserisciStringa() {
+        // inserisciStringa -> Scrivere un metodo che chiede di inserire una stringa e ne controlla la lunghezza.
+        //                            deve ripetere la richiesta di inserimento della stringa fin quando la lunghezza
+        //                            non è almeno di 5 caratteri. Infine si deve ritornare la stringa inserita.
+
+        // Soluzione con ciclo while
+//        while(true) {
+//            System.out.print("Inserisci una stringa: ");
+//            String str = sc.nextLine();
+//            if (str.length() > 5) {
+//                return str;
+//            }
+//            System.out.println("Devi inserire una stringa lunga alemno 5 caratteri.");
+//        }
+
+        // Soluzione con ciclo do-while
+        String str;
+        do {
+            System.out.print("Inserisci una stringa: ");
+            str = sc.nextLine();
+        } while (str.length() < 5);
+        return str;
+    }
+
+    public static void suddividiStringa(String str) {
+        // suddividiStringa -> Scrivere un metodo che riceve come paramentro una stringa, si deve suddividere
+        //    in caratteri separati da una virgola e stampare a video.  ("s,t,r,i,n,g,a")
+
+        // Soluzione con split()
+//        String[] strSplit = str.split("");
+//        String testo = "";
+//        int i = 0;
+//        while(i < strSplit.length) {
+//            //System.out.println(strSplit[i]);
+//            if(i == strSplit.length-1) {
+//                testo += strSplit[i];
+//            } else {
+//                testo += strSplit[i] + ",";
+//            }
+//            i++;
+//        }
+
+        // Soluzione con charAt()
+        String testo = "";
+        int i = 0;
+        while(i < str.length()) {
+            if(i == str.length()-1) {
+                testo += str.charAt(i);
+            } else {
+                testo += str.charAt(i) + ",";
+            }
+            i++;
+       }
+        System.out.println(testo);
+    }
+
+    public static void contoAllaRovescia() {
+        // -   contoAllaRovescia -> Scrivere un metodo che chieda di inserire un numero valido(0->100), altrimenti richiedere il valore.
+        //                            Infine stampi il conto alla rovescia dal numero valido inserito fino a zero.
+        int num;
+        do {
+            System.out.print("Inserisci un numero valido(0-100): ");
+            num = Integer.parseInt(sc.nextLine());
+        } while (num < 0 || num > 100);
+        for (int i = num; i >= 0; i--) {
+            System.out.println(i + " -> " + num);
+        }
+    }
+
+    public static void popolaArray() {
+        // popolaArray -> Scrivere un metodo che chiede di inserire la lunghezza di un array, in base al
+        //                            valore fornito dall'utente creare un array di Stringhe e popolarlo con il metodo
+        //                            inserisciStringa creato in precedenza. Infine stampare le stringhe contenute
+        //                            nell'array tramite il metodo suddividiStringa.
+        System.out.print("Inserisci un numero valido(1-20): ");
+        int num = Integer.parseInt(sc.nextLine());
+        // Creo un array di String con lunghezza pari al valore inserito da terminale dall'utente
+        String[] arr = new String[num];
+        // Itero completamente l'array e lo popolo con strighe create tramite il metodo inserisciStringa()
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = inserisciStringa();
+        }
+        // Stampo i valori inseriti nell'array tramite il metodo suddividiStringa()
+        for (int i = 0; i < arr.length; i++) {
+            suddividiStringa(arr[i]);
+        }
     }
 }

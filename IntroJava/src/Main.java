@@ -1,4 +1,4 @@
-import java.security.spec.MGF1ParameterSpec;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
@@ -93,6 +93,8 @@ public class Main {
         System.out.println("Repeat: " + st.repeat(3));
         System.out.println("Replace: " + st.replace('a', '-'));
         System.out.println("Equals: " + st.equals("Ciao a TUTTI!"));
+        System.out.println("IndexOf '!': " + st.indexOf("!"));
+        System.out.println("CharAt '13': " + st.charAt(13));
 
         // Operatori
         // Operatore di assegnamento
@@ -164,7 +166,7 @@ public class Main {
 
         // Scanner -> per interagire con l'utente nel terminale
         // Creo un oggetto capace di leggere da terminale valori inseriti da un utente
-//        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 //
 //        System.out.print("Inserisci il tuo nome: ");
 //        String nome = sc.nextLine();
@@ -182,8 +184,133 @@ public class Main {
         //test();
         //String utente = testString();
         //System.out.println(utente.toUpperCase());
-        boolean res = testArgs(50);
-        System.out.println(res);
+        //boolean res = testArgs(50);
+        // System.out.println(res);
+
+        // Array in Java
+        // Un array è un tipo di dato che aggrega più valori nella stessa locazione di memoria
+        // in un array posso accedere a gli elementi interni utilizzando l'indice
+        // in un array memorizziamo i valori dall'indice 0 a n-1
+        // [  0      1      2        3         4    ]
+        // ["uno", "due", "tre", "quattro", "cinque"]
+        String[] arr = new String[5];
+        arr[0] = "uno";
+        arr[1] = "due";
+        arr[2] = "tre";
+        //arr[3] = null;
+        arr[4] = "cinque";
+
+        System.out.println(arr[1]);
+        System.out.println(arr[3]);
+
+        int[] nums = {1,2,3,4,5};
+
+        System.out.println(nums[1]);
+        System.out.println(nums[3]);
+
+        // Algoritmi, strutture di controllo e strutture iterative
+        // IF-ELSE | SWITCH | FOR | WHILE | DO WHILE
+
+        // IF-ELSE
+        // if(condizione) { blocco di istruzioni)
+        // else if (condizione) { blocco di istruzioni)
+        // ...
+        // else { blocco di istruzioni }
+        int numx = 27;
+        if(numx > 18) {
+            System.out.println("x > 18");
+            if(numx % 2 == 0) {
+                System.out.println("Numero pari");
+            } else {
+                System.out.println("Numero dispari");
+            }
+        } else if(numx == 18) {
+            System.out.println("x = 18");
+        } else if(numx < 0) {
+            System.out.println("Valore errato!!!");
+        } else {
+            System.out.println("x < 18");
+        }
+
+        // SWITCH
+        // switch (espressione)
+        // case n: blocco di istruzioni; break;
+        // ....
+        // case n: blocco di istruzioni; break;
+        // default: blocco di istruzioni; break;
+        System.out.print("Scegli una opzione tra 1-5: ");
+        int o = 2; // Integer.parseInt(sc.nextLine());
+        switch (o) {
+            case 1: System.out.println("Uno");break;
+            case 2: System.out.println("Due");break;
+            case 3: System.out.println("Tre");break;
+            case 4: System.out.println("Quattro");break;
+            case 5: System.out.println("Cinque");break;
+            default: System.out.println("Valore errato!");break;
+        }
+
+        // FOR
+        // for(inizializzazione; condizione; incremento) { blocco di istruzioni }
+        for(int id=0; id<10; id++) {
+            if(id == 2) { continue; }
+            if(id == 5) { break; }
+            if(id % 2 == 0) { System.out.println(id); }
+        }
+
+
+        // WHILE
+        // while(condizione) { blocco di istruzioni }
+        int idw = 0;
+        while(idw<10) {
+            //if(idw == 2) { continue; }
+            if(idw == 5) { break; }
+            if(idw % 2 == 0) { System.out.println(idw); }
+            idw++;
+        }
+
+        while (true) {
+            System.out.print("Scegli una opzione tra 1-5 oppure 0 per terminare: ");
+            int op = Integer.parseInt(sc.nextLine());
+            if(op > 0 && op <= 5) {
+                System.out.println("Il valore inserito è: " + op);
+            } else if(op == 0) {
+                break;
+            } else {
+                System.out.println("Il valore " + op + " è errato!!!");
+            }
+        }
+
+        // DO-WHILE
+        // do { blocco di istruzioni } while(condizione)
+        int iddw = 10;
+        do {
+            System.out.println("Il valore è: " + iddw);
+            iddw++;
+        } while (iddw < 5);
+
+        // Oggetto LocalDate
+        // LocalDate.now() -> restituisce la data del momento
+        // LocalDate.of(anno, mese, giorno) -> imposta una data
+        LocalDate oggi = LocalDate.now();
+        LocalDate altraData = LocalDate.of(2020, 8, 25);
+        System.out.println(oggi);
+        System.out.println(altraData);
+        System.out.println(oggi.getYear());
+        System.out.println(oggi.getMonth());
+        System.out.println(oggi.getMonthValue());
+        System.out.println(oggi.getDayOfMonth());
+        System.out.println(oggi.getDayOfWeek());
+
+        // Classi in Java
+        Test t1 = new Test("Mario", "Utente");
+        //t1.nome = "Mario";
+        //t1.tipo = "Utente";
+        t1.info();
+
+        Test t2 = new Test("Bobby", "Cane");
+        //t2.nome = "Bobby";
+        //t2.tipo = "Cane";
+        t2.info();
     }
 
     public static void test() {

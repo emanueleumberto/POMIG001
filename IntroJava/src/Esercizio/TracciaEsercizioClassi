@@ -1,0 +1,43 @@
+Gestione studenti di un corso
+Si vuole realizzare un semplice programma Java per la gestione di un corso di formazione.
+Il sistema deve gestire un insieme di studenti, memorizzati in un array di oggetti.
+
+Definire una classe Studente con:
+Attributi pubblici:
+ - String nome
+ - String cognome
+ - int eta
+ - double votoMedio
+
+Un costruttore che inizializza tutti gli attributi
+Un metodo stampaDati() che visualizza a console i dati dello studente
+
+Definire una classe GestioneCorso contenente il main che:
+ - Dichiara un array di studenti di dimensione fissa (es. 5)
+ - Inizializza l’array con almeno 3 studenti
+ - Utilizza un ciclo for per:
+    Stampare tutti gli studenti
+ - Calcola:
+    La media dei voti del corso
+ - Visualizza:
+    Gli studenti con votoMedio >= 18
+
+Usare:
+ - array (non ArrayList)
+Cicli:
+ - almeno un for
+ - almeno un while oppure do-while
+Strutture di controllo:
+ - if
+ - switch (per valutare la fascia di voto)
+    Utilizzare uno switch per classificare il voto medio dello studente:
+        -> voto < 18 → "Insufficiente"
+        -> 18 <= voto < 24 → "Sufficiente"
+        -> 24 <= voto < 28 → "Buono"
+        -> voto >= 28 → "Ottimo"
+
+Output:
+Stampa elenco studenti
+Media voti del corso
+Elenco studenti promossi
+Classificazione del voto per ciascuno studente

@@ -32,3 +32,32 @@ Implementare i seguenti metodi:
 -   dividi      -> Chiede ad un utente due numeri, li divide e ne restituisce il risultato
 -   concatena   -> Prende in ingresso 4 valori (somma, moltiplica, sottrai, dividi) e stampa nel terminale
                     una stringa con tutti i valori calcolati dai metodi precedenti
+
+Esercizio 5 - Strutture di controllo e strutture iterative
+IF ELSE
+-   stringaPariDispari  -> Chiede ad un utente una stringa, ritorna true se il numero dei caratteri
+                            è pari altrimenti deve ritornare false
+-   annoBisestile       -> Chiede ad un utente un anno, ritorna true se è un anno bisestile
+                            altrimenti deve ritornare false
+                            (Per essere un anno bisestile deve essere divisibile per 4,
+                            qualora sia divisibile per 100 deve essere anche divisibile per 400)
+SWITCH
+-   stampaMese          -> passare un oggetto di tipo LocalDate come paramentro del metodo e stampare a video
+                            la data completa nel seguente formato (11 - Febbraio - 2025)
+-   stampaStagione      -> passare un oggetto di tipo LocalDate come paramentro del metodo e stampare a video
+                            la stagione corrispondente
+
+WHILE
+-   inserisciStringa    -> Scrivere un metodo che chiede di inserire una stringa e ne controlla la lunghezza.
+                            deve ripetere la richiesta di inserimento della stringa fin quando la lunghezza
+                            non è almeno di 5 caratteri. Infine si deve ritornare la stringa inserita.
+-   suddividiStringa    -> Scrivere un metodo che riceve come paramentro una stringa, si deve suddividere
+                            in caratteri separati da una virgola e stampare a video.  ("s,t,r,i,n,g,a")
+
+FOR
+-   contoAllRovescia     -> Scrivere un metodo che chieda di inserire un numero valido(0->100), altrimenti richiedere il valore.
+                            Infine stampi il conto alla rovescia dal numero valido inserito fino a zero.
+-   popolaArray         -> Scrivere un metodo che chiede di inserire la lunghezza di un array, in base al
+                            valore fornito dall'utente creare un array di Stringhe e popolarlo con il metodo
+                            inserisciStringa creato in precedenza. Infine stampare le stringhe contenute
+                            nell'array tramite il metodo suddividiStringa.
