@@ -15,11 +15,13 @@ Un metodo stampaDati() che visualizza a console i dati dello studente
 Definire una classe GestioneCorso contenente il main che:
  - Dichiara un array di studenti di dimensione fissa (es. 5)
  - Inizializza l’array con almeno 3 studenti
- - Utilizza un ciclo for per:
-    Stampare tutti gli studenti
- - Calcola:
-    La media dei voti del corso
- - Visualizza:
+ - stampaUtenti:
+    Utilizza un ciclo for per:
+       Stampare tutti gli studenti
+ - calcolaMedia:
+    Utilizza un ciclo while per:
+       La media dei voti del corso
+ - visualizzaPromossi:
     Gli studenti con votoMedio >= 18
 
 Usare:
