@@ -11,7 +11,14 @@ public class Automobile extends Veicolo {
         return numPorte;
     }
 
+    @Override
     public String info() {
         return "Automobile: " +  this.getMarca() + " " + this.getModello() + " colore: " + this.getColore() + " num.porte: " + this.numPorte;
     }
+
+    @Override
+    public void start() {
+        System.out.println("Start Automobile!");
+    }
+
 }

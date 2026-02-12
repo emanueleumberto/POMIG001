@@ -1,4 +1,4 @@
-package Esercizio;
+package Esercizio1;
 
 public class Dipendente {
 
@@ -17,7 +17,7 @@ public class Dipendente {
         this.stipendio = calcolaStipendio();
     }
 
-    public double calcolaStipendio() {
+    private double calcolaStipendio() {
         if(this.dipartimento.equals(Dipartimento.PRODUZIONE)) {
             return this.stipendioBase + (this.stipendioBase * 0.2);
         } else if(this.dipartimento.equals(Dipartimento.VENDITE)) {
@@ -47,6 +47,7 @@ public class Dipendente {
     }
     public void setDipartimento(Dipartimento dipartimento) {
         this.dipartimento = dipartimento;
+        this.stipendio = calcolaStipendio();
     }
 
     public String info() {

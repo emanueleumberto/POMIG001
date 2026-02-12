@@ -14,7 +14,13 @@ public class Camper extends Veicolo {
         this.numLetti = numLetti;
     }
 
+    @Override
     public String info() {
         return "Camper: " + this.getMarca() + " " + this.getModello() + " colore: " + this.getColore() + " num.letti: " + this.numLetti;
+    }
+
+    @Override
+    public void start() {
+        System.out.println("Start Camper!");
     }
 }

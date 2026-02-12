@@ -1,12 +1,12 @@
-package Esercizio;
+package Esercizio1;
 
-public class Dirigente  extends Dipendente{
-    public Dirigente(String nomeCompleto, Dipartimento dipartimento) {
+public class DipendenteFullTime extends Dipendente{
+    public DipendenteFullTime(String nomeCompleto, Dipartimento dipartimento) {
         super(nomeCompleto, dipartimento);
     }
 
     public double calculateSalary() {
-        return getStipendio() * 2;
+        return getStipendio();
     }
 
     public String info() {

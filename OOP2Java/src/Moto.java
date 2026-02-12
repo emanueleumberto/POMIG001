@@ -13,8 +13,14 @@ public class Moto extends Veicolo {
         this.numPosti = numPosti;
     }
 
+    @Override
     public String info() {
         return "Moto: " + this.getMarca() + " " + this.getModello() + " colore: " + this.getColore() + " num.posti: " + this.numPosti;
+    }
+
+    @Override
+    public void start() {
+        System.out.println("Start Moto!");
     }
 
 }
