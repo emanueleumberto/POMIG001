@@ -67,6 +67,14 @@ public class Main {
         System.out.println("Package: ");
         System.out.println("Protected: ");
 
+        Navigatore[] arr = new Navigatore[3];
+        arr[0] = a1;
+        arr[1] = c1;
+        arr[2] = s1;
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i].aggiornaNavigatore();
+        }
 
     }
 }

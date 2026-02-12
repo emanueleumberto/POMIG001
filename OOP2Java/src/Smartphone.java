@@ -1,4 +1,4 @@
-public class Smartphone {
+public class Smartphone implements Navigatore {
 
     private String marca;
     private String modello;
@@ -33,5 +33,20 @@ public class Smartphone {
 
     public String info() {
         return "Smartphone: " +  this.marca + " " + this.modello + " colore: " + this.colore + " memoria: " + this.memoria;
+    }
+
+    @Override
+    public void startNavigatore() {
+        System.out.println("Start navigatore su Smartphone");
+    }
+
+    @Override
+    public void stopNavigatore() {
+        System.out.println("Stop navigatore su Smartphone");
+    }
+
+    @Override
+    public void aggiornaNavigatore() {
+        System.out.println("Aggiorna navigatore su Smartphone");
     }
 }

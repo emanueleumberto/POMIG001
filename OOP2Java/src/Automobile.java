@@ -1,4 +1,4 @@
-public class Automobile extends Veicolo {
+public class Automobile extends Veicolo implements Navigatore {
 
     private int numPorte;
 
@@ -21,4 +21,18 @@ public class Automobile extends Veicolo {
         System.out.println("Start Automobile!");
     }
 
+    @Override
+    public void startNavigatore() {
+        System.out.println("Start navigatore su Auto");
+    }
+
+    @Override
+    public void stopNavigatore() {
+        System.out.println("Stop navigatore su Auto");
+    }
+
+    @Override
+    public void aggiornaNavigatore() {
+        System.out.println("Aggiorna navigatore su Auto");
+    }
 }

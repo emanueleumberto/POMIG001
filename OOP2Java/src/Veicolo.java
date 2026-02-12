@@ -50,5 +50,4 @@ public abstract class Veicolo {
         System.out.println("Sono il metodo testPolimorfismo con param1 e param2");
     }
 
-
 }

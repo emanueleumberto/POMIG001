@@ -1,4 +1,4 @@
-public class Camper extends Veicolo {
+public class Camper extends Veicolo implements Navigatore{
 
     private int numLetti;
 
@@ -22,5 +22,20 @@ public class Camper extends Veicolo {
     @Override
     public void start() {
         System.out.println("Start Camper!");
+    }
+
+    @Override
+    public void startNavigatore() {
+        System.out.println("Start navigatore su Camper");
+    }
+
+    @Override
+    public void stopNavigatore() {
+        System.out.println("Stop navigatore su Camper");
+    }
+
+    @Override
+    public void aggiornaNavigatore() {
+        System.out.println("Aggiorna navigatore su Camper");
     }
 }
