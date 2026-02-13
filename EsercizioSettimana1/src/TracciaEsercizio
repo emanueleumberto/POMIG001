@@ -1,0 +1,56 @@
+Sistema di Gestione Pagamenti
+Progettare un sistema che simuli la gestione di diversi metodi di pagamento in un’applicazione e-commerce.
+Il sistema deve:
+ - Modellare in modo astratto un pagamento
+ - Gestire diverse tipologie concrete
+ - Applicare polimorfismo
+ - Utilizzare array di oggetti
+ - Gestire errori tramite eccezioni standard e personalizzate
+
+Creare una classe astratta Pagamento con:
+Attributi private
+ - String idTransazione
+ - double importo
+ - boolean completato
+Costruttore completo con validazione:
+ - importo > 0
+ - idTransazione non null e non vuoto
+Metodo astratto:
+ - eseguiPagamento()
+Metodo concreto:
+ - stampaDettagli()
+
+Creare almeno due sottoclassi concrete:
+PagamentoCarta:
+ - String numeroCarta
+ - String intestatario
+ - String scadenza
+PagamentoPayPal:
+ - String email
+ - String password
+
+Entrambe devono:
+ - Estendere Pagamento
+ - Implementare eseguiPagamento()
+ - Impostare completato = true se l’operazione va a buon fine
+
+Tutti gli attributi devono essere private
+Fornire solo getter
+Evitare setter non necessari
+Validare i dati nel costruttore Se i dati sono invalidi: Lanciare IllegalArgumentException
+
+Nel main:
+ - Creare un array: Pagamento[]
+ - Inserire oggetti di tipo: PagamentoCarta, PagamentoPayPal
+ - Iterare con ciclo for
+ - Richiamare eseguiPagamento() in modo polimorfico
+ - Stampare i dettagli di ciascun pagamento
+
+Eccezione custom
+
+Creare: PagamentoException
+L’eccezione deve essere lanciata quando:
+ - I dati del pagamento non sono validi
+ - Il pagamento viene eseguito due volte
+ - La simulazione del pagamento fallisce
+ - Gestire l’eccezione nel main con try-catch.
