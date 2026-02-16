@@ -1,0 +1,68 @@
+Sistema di Generazione Report Clienti
+
+Realizzare un’applicazione Java console che:
+ - utilizzi librerie esterne installate manualmente
+ - generi dati realistici tramite Java Faker
+ - produca log strutturati tramite SLF4J + Logback
+ - salvi e legga dati da file tramite Apache Commons IO
+
+Creare la classe Cliente
+ - id
+ - nome
+ - cognome
+ - email
+ - telefono
+ - citta
+
+ Costruttore completo
+ Getter/Setter se necessario
+ Metodo -> String toFileString(); -> restituisce stringa che corrisponde ad una riga del file csv
+
+Creare la classe ClienteGenerator
+Utilizzare Java Faker per:
+ - nomi
+ - cognomi
+ - email
+ - città
+ - telefono
+
+Generare un array di almeno 20 clienti
+Metodo -> public static Cliente[] generaClienti(int numero);
+
+Configurare Logback tramite file logback.xml
+ - Log su console
+ - Log su file /logs/app.log
+
+Livelli richiesti:
+ - INFO → operazioni normali
+ - DEBUG → creazione clienti
+ - ERROR → gestione eccezioni
+Utilizzare l'oggetto :
+Logger logger = LoggerFactory.getLogger(NomeClasse.class);
+
+Eventi da loggare:
+ - Avvio applicazione
+ - Numero clienti generati
+ - Scrittura file completata
+ - Errori I/O
+
+Creare classe ClienteFileManager (Commons IO)
+ - Salvare i clienti in clienti.csv -> FileUtils.writeStringToFile()
+ - Leggere il file e Stampare il contenuto a console -> FileUtils.readFileToString()
+
+Gestione Eccezioni
+ - IOException
+ - file non trovato
+ - errore scrittura
+ - Classe custom per gestire dati incompleti
+
+usare try-catch e loggare errore con livello ERROR
+
+Classe Main
+Flusso richiesto:
+ 1 - Avvio applicazione (log INFO)
+ 2 - Generazione clienti fake se non ce ne sono
+ 3 - Scrittura su file
+ 4 - Lettura file
+ 5 - Stampa contenuto correttamente formattato
+ 6 - Fine applicazione
