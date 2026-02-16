@@ -58,7 +58,7 @@ Gestione Eccezioni
 
 usare try-catch e loggare errore con livello ERROR
 
-Classe Main
+Classe Main di nome ReportClienti
 Flusso richiesto:
  1 - Avvio applicazione (log INFO)
  2 - Generazione clienti fake se non ce ne sono

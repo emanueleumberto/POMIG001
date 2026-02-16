@@ -6,7 +6,7 @@
         </encoder>
     </appender>
     <appender name="FILE_OUTPUT" class="ch.qos.logback.core.FileAppender">
-        <file>log/debug.log</file>
+        <file>logs/app.log</file>
         <encoder>
             <pattern>%d{dd-MM-YYYY HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
