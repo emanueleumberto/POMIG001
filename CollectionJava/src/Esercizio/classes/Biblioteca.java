@@ -2,9 +2,13 @@ package Esercizio.classes;
 
 import Esercizio.exceptions.LettoreException;
 import Esercizio.exceptions.LibroException;
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDate;
 import java.util.*;
 
 public class Biblioteca {
@@ -15,6 +19,7 @@ public class Biblioteca {
     private Map<Lettore, Set<Libro>> prestiti;
 
     private Logger log = LoggerFactory.getLogger(Biblioteca.class);
+    private File file = new File("report/prestiti.csv");
 
     public Biblioteca(String nome) {
         this.nome = nome;
@@ -50,7 +55,7 @@ public class Biblioteca {
         }
     }
 
-    public boolean prestaLibro(Lettore lettore, String isbn) throws LibroException, LettoreException {
+    public boolean prestaLibro(Lettore lettore, String isbn) throws LibroException, LettoreException, IOException {
         Libro libro = trovaLibroDaISBN(isbn); // Cerco ul libro disponibile dato un ISBN -> obj || null
         // Se il libro(null) non è presente nella biblioteca
         if(libro == null) { throw new LibroException("Codice ISBN non trovato!"); }
@@ -71,6 +76,10 @@ public class Biblioteca {
             this.prestiti.put(lettore, listaPrestitiLettore); // Salvo la lista di prestiti nella mappa
             this.libriDisponibili.remove(libro); // rimuovo il libro preso in prestito dalla lista dei libri disponibili
             log.info("Libro {} preso in prestito da {}.", libro.getTitolo(), lettore.getNome());
+            // scrittura su file di testo del prestito effettuato
+            String report = LocalDate.now() + ", " + lettore.getNome() + ", " + libro.getTitolo() + System.lineSeparator();  //(17/02/2026, Mario Rossi, Harry Potter)
+            FileUtils.writeStringToFile(file, report, "UTF-8", true);
+            log.info(report + " salvato su file!");
             return true;
         } else {
             throw new LettoreException("Lettore non registrato nella Biblioteca!");
@@ -80,6 +89,15 @@ public class Biblioteca {
     public Libro trovaLibroDaISBN(String isbn) {
         for (Libro l : this.libriDisponibili) {
             if(l.getIsbn().equals(isbn)) {
+                return l;
+            }
+        }
+        return null;
+    }
+
+    public Lettore trovaLettoreDaId(int id) {
+        for (Lettore l : this.utentiRegistrati) {
+            if(l.getId() == id) {
                 return l;
             }
         }
@@ -123,4 +141,6 @@ public class Biblioteca {
             log.info("------------------------");
         }
     }
+
+
 }

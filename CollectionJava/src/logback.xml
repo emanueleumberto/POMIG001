@@ -12,7 +12,8 @@
         </encoder>
     </appender>
 
-    <root level="DEBUG">
+    <root level="WARN">
         <appender-ref ref="CONSOLE_OUTPUT" />
+        <appender-ref ref="FILE_OUTPUT" />
     </root>
 </configuration>
