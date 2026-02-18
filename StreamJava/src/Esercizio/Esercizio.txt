@@ -17,13 +17,14 @@ Creare la classe: Ordine
  - String categoria
  - double prezzo
  - int quantita
+
 // Esercizio Difficile
 Creare la classe: Ordine
  - int id
  - Cliente cliente [nome,cognome,citta,anni]
  - List<Prodotto> listaProdotti -> Prodotto prodotto [nome,categoria,prezzo]
- - int quantita
 
+Per ogni classe:
 Costruttore completo
 Getter
 toString()
