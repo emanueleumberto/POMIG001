@@ -1,0 +1,43 @@
+Sistema di Gestione Ordini Online
+Realizzare un’applicazione Java console che gestisca un insieme di ordini clienti utilizzando:
+ - Collection (ArrayList, Map)
+ - Operazioni Stream:
+    - filter
+    - map
+    - sorted
+    - collect
+    - reduce
+    - groupingBy
+
+// Esercizio Semplice
+Creare la classe: Ordine
+ - int id
+ - String cliente
+ - String prodotto
+ - String categoria
+ - double prezzo
+ - int quantita
+// Esercizio Difficile
+Creare la classe: Ordine
+ - int id
+ - Cliente cliente [nome,cognome,citta,anni]
+ - List<Prodotto> listaProdotti -> Prodotto prodotto [nome,categoria,prezzo]
+ - int quantita
+
+Costruttore completo
+Getter
+toString()
+
+Nel main:
+ - List<Ordine> ordini = new ArrayList<>();
+ Inserire manualmente almeno 10 ordini
+ Le categorie devono includere ad esempio:
+  "Elettronica", "Libri", "Casa", "Sport"
+
+Implementare le seguenti funzionalità usando Stream API.
+- Stampare tutti gli ordini con: prezzo maggiore di 100€
+- Creare una lista contenente solo: i nomi dei clienti senza duplicati
+- Stampare gli ordini:ordinati per prezzo decrescente
+- Calcolare: valore totale degli ordini
+- Raggruppare gli ordini per categoria.
+- Cliente con spesa totale maggiore
