@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="librerie">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafaker-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logback-classic-1.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logback-core-1.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-2.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/snakeyaml-2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,179 @@
+16-02-2026 17:01:44.516 [main] DEBUG Esercizio.ClienteGenerator - Cliente Mirko Palmieri creato
+16-02-2026 17:01:44.551 [main] DEBUG Esercizio.ClienteGenerator - Cliente Gianriccardo Barone creato
+16-02-2026 17:01:44.552 [main] DEBUG Esercizio.ClienteGenerator - Cliente Serse Farin creato
+16-02-2026 17:01:44.553 [main] DEBUG Esercizio.ClienteGenerator - Cliente Alessandro Grasso creato
+16-02-2026 17:01:44.554 [main] DEBUG Esercizio.ClienteGenerator - Cliente Antimo Rinaldi creato
+16-02-2026 17:01:44.555 [main] DEBUG Esercizio.ClienteGenerator - Cliente Liborio Bianc creato
+16-02-2026 17:01:44.556 [main] DEBUG Esercizio.ClienteGenerator - Cliente Mecren Vitali creato
+16-02-2026 17:01:44.557 [main] DEBUG Esercizio.ClienteGenerator - Cliente Osea Testa creato
+16-02-2026 17:01:44.558 [main] DEBUG Esercizio.ClienteGenerator - Cliente Ciro Barbieri creato
+16-02-2026 17:01:44.559 [main] DEBUG Esercizio.ClienteGenerator - Cliente Avide De Santis creato
+16-02-2026 17:01:44.559 [main] INFO  Esercizio.ClienteGenerator - Generati 10 clienti fake.
+16-02-2026 17:06:32.976 [main] DEBUG Esercizio.ClienteGenerator - Cliente Marino Bianchi creato
+16-02-2026 17:06:33.011 [main] DEBUG Esercizio.ClienteGenerator - Cliente Laerte Pagano creato
+16-02-2026 17:06:33.012 [main] DEBUG Esercizio.ClienteGenerator - Cliente Enzo Cont creato
+16-02-2026 17:06:33.014 [main] DEBUG Esercizio.ClienteGenerator - Cliente Odone Testa creato
+16-02-2026 17:06:33.015 [main] DEBUG Esercizio.ClienteGenerator - Cliente Pericle Ferretti creato
+16-02-2026 17:06:33.016 [main] DEBUG Esercizio.ClienteGenerator - Cliente Fatima Cattaneo creato
+16-02-2026 17:06:33.017 [main] DEBUG Esercizio.ClienteGenerator - Cliente Leonardo Neri creato
+16-02-2026 17:06:33.018 [main] DEBUG Esercizio.ClienteGenerator - Cliente Michele Testa creato
+16-02-2026 17:06:33.018 [main] DEBUG Esercizio.ClienteGenerator - Cliente Concetta Neri creato
+16-02-2026 17:06:33.019 [main] DEBUG Esercizio.ClienteGenerator - Cliente Aroldo Sartori creato
+16-02-2026 17:06:33.019 [main] INFO  Esercizio.ClienteGenerator - Generati 10 clienti fake.
+16-02-2026 17:13:34.470 [main] DEBUG Esercizio.ClienteGenerator - Cliente Bernardo Villa creato
+16-02-2026 17:13:34.506 [main] ERROR Esercizio.ReportClienti - DatiIncopletiException Dati non corretti!!!
+16-02-2026 17:13:58.458 [main] ERROR Esercizio.ReportClienti - DatiIncopletiException Dati non corretti!!!
+16-02-2026 17:14:04.809 [main] DEBUG Esercizio.ClienteGenerator - Cliente Albino Colombo creato
+16-02-2026 17:14:04.852 [main] DEBUG Esercizio.ClienteGenerator - Cliente Nunzia Palmieri creato
+16-02-2026 17:14:04.854 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giorgio Leone creato
+16-02-2026 17:14:04.854 [main] DEBUG Esercizio.ClienteGenerator - Cliente Silverio Barone creato
+16-02-2026 17:14:04.855 [main] DEBUG Esercizio.ClienteGenerator - Cliente Sabatino Rizzo creato
+16-02-2026 17:14:04.856 [main] DEBUG Esercizio.ClienteGenerator - Cliente Quirino De luca creato
+16-02-2026 17:14:04.856 [main] DEBUG Esercizio.ClienteGenerator - Cliente Lazzaro Pagano creato
+16-02-2026 17:14:04.857 [main] DEBUG Esercizio.ClienteGenerator - Cliente Quarto Longo creato
+16-02-2026 17:14:04.858 [main] DEBUG Esercizio.ClienteGenerator - Cliente Gianmaria Battaglia creato
+16-02-2026 17:14:04.858 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giulio Damico creato
+16-02-2026 17:14:04.858 [main] INFO  Esercizio.ClienteGenerator - Generati 10 clienti fake.
+16-02-2026 17:22:07.765 [main] DEBUG Esercizio.ClienteGenerator - Cliente Aroldo Palumbo creato
+16-02-2026 17:22:07.800 [main] DEBUG Esercizio.ClienteGenerator - Cliente Marcella Moretti creato
+16-02-2026 17:22:07.800 [main] DEBUG Esercizio.ClienteGenerator - Cliente Damiano D'amico creato
+16-02-2026 17:22:07.801 [main] DEBUG Esercizio.ClienteGenerator - Cliente Quirino Fabbri creato
+16-02-2026 17:22:07.802 [main] DEBUG Esercizio.ClienteGenerator - Cliente Terzo Caruso creato
+16-02-2026 17:22:07.803 [main] DEBUG Esercizio.ClienteGenerator - Cliente Diana Morelli creato
+16-02-2026 17:22:07.803 [main] DEBUG Esercizio.ClienteGenerator - Cliente Costanzo Pagano creato
+16-02-2026 17:22:07.804 [main] DEBUG Esercizio.ClienteGenerator - Cliente Costanzo Piras creato
+16-02-2026 17:22:07.805 [main] DEBUG Esercizio.ClienteGenerator - Cliente Deborah Vitale creato
+16-02-2026 17:22:07.805 [main] DEBUG Esercizio.ClienteGenerator - Cliente Teseo Santoro creato
+16-02-2026 17:22:07.805 [main] INFO  Esercizio.ClienteGenerator - Generati 10 clienti fake.
+16-02-2026 17:38:11.883 [main] ERROR Esercizio.ReportClienti - IOException: csv\clienti.csv
+16-02-2026 17:43:01.363 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:43:01.421 [main] ERROR Esercizio.ReportClienti - IOException: csv\clienti.csv
+16-02-2026 17:43:01.422 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:43:27.399 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:43:27.716 [main] DEBUG Esercizio.ClienteGenerator - Cliente Serse Caruso creato
+16-02-2026 17:43:27.720 [main] DEBUG Esercizio.ClienteGenerator - Cliente Samira Carbon creato
+16-02-2026 17:43:27.721 [main] DEBUG Esercizio.ClienteGenerator - Cliente Sibilla Rinaldi creato
+16-02-2026 17:43:27.722 [main] DEBUG Esercizio.ClienteGenerator - Cliente Osvaldo Ruggiero creato
+16-02-2026 17:43:27.722 [main] DEBUG Esercizio.ClienteGenerator - Cliente Fulvio Grasso creato
+16-02-2026 17:43:27.723 [main] DEBUG Esercizio.ClienteGenerator - Cliente Elio Gentile creato
+16-02-2026 17:43:27.724 [main] DEBUG Esercizio.ClienteGenerator - Cliente Teseo Romano creato
+16-02-2026 17:43:27.724 [main] DEBUG Esercizio.ClienteGenerator - Cliente Rocco D'angelo creato
+16-02-2026 17:43:27.724 [main] DEBUG Esercizio.ClienteGenerator - Cliente Selvaggia De luca creato
+16-02-2026 17:43:27.725 [main] DEBUG Esercizio.ClienteGenerator - Cliente Luce Orlando creato
+16-02-2026 17:43:27.725 [main] INFO  Esercizio.ClienteGenerator - Generati 10 clienti fake.
+16-02-2026 17:43:27.733 [main] ERROR Esercizio.ReportClienti - IOException: csv\clienti.csv
+16-02-2026 17:43:27.734 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:44:06.283 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:44:06.325 [main] ERROR Esercizio.ReportClienti - IOException: csv\clienti.csv
+16-02-2026 17:44:06.327 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:44:50.478 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:44:50.752 [main] DEBUG Esercizio.ClienteGenerator - Cliente Italo Villa creato
+16-02-2026 17:44:50.754 [main] DEBUG Esercizio.ClienteGenerator - Cliente Romeo Neri creato
+16-02-2026 17:44:50.756 [main] DEBUG Esercizio.ClienteGenerator - Cliente Gabriele Battaglia creato
+16-02-2026 17:44:50.757 [main] DEBUG Esercizio.ClienteGenerator - Cliente Nazzareno Farin creato
+16-02-2026 17:44:50.758 [main] DEBUG Esercizio.ClienteGenerator - Cliente Lazzaro Montanari creato
+16-02-2026 17:44:50.759 [main] DEBUG Esercizio.ClienteGenerator - Cliente Evangelista Testa creato
+16-02-2026 17:44:50.759 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giacinto Marian creato
+16-02-2026 17:44:50.760 [main] DEBUG Esercizio.ClienteGenerator - Cliente Siro Colombo creato
+16-02-2026 17:44:50.761 [main] DEBUG Esercizio.ClienteGenerator - Cliente Elga Gallo creato
+16-02-2026 17:44:50.761 [main] DEBUG Esercizio.ClienteGenerator - Cliente Italo D'angelo creato
+16-02-2026 17:44:50.761 [main] INFO  Esercizio.ClienteGenerator - Generati 10 clienti fake.
+16-02-2026 17:44:50.837 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:45:17.180 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:45:17.232 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:47:08.477 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:47:08.537 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:50:32.441 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:50:32.493 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:52:33.391 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:52:42.680 [main] DEBUG Esercizio.ClienteGenerator - Cliente Marieva Lombardi creato
+16-02-2026 17:52:42.685 [main] DEBUG Esercizio.ClienteGenerator - Cliente Marco Sanna creato
+16-02-2026 17:52:42.686 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giacinto Martini creato
+16-02-2026 17:52:42.686 [main] DEBUG Esercizio.ClienteGenerator - Cliente Evita Bianchi creato
+16-02-2026 17:52:42.687 [main] DEBUG Esercizio.ClienteGenerator - Cliente Ursula Guerra creato
+16-02-2026 17:52:42.687 [main] DEBUG Esercizio.ClienteGenerator - Cliente Cira Rinaldi creato
+16-02-2026 17:52:42.688 [main] DEBUG Esercizio.ClienteGenerator - Cliente Antonino Monti creato
+16-02-2026 17:52:42.688 [main] DEBUG Esercizio.ClienteGenerator - Cliente Quirino Colombo creato
+16-02-2026 17:52:42.689 [main] DEBUG Esercizio.ClienteGenerator - Cliente Elga Valentini creato
+16-02-2026 17:52:42.689 [main] DEBUG Esercizio.ClienteGenerator - Cliente Danuta Villa creato
+16-02-2026 17:52:42.690 [main] DEBUG Esercizio.ClienteGenerator - Cliente Gastone D'angelo creato
+16-02-2026 17:52:42.690 [main] DEBUG Esercizio.ClienteGenerator - Cliente Elga Bianc creato
+16-02-2026 17:52:42.690 [main] DEBUG Esercizio.ClienteGenerator - Cliente Rosalba Vitali creato
+16-02-2026 17:52:42.691 [main] DEBUG Esercizio.ClienteGenerator - Cliente Emilia Barone creato
+16-02-2026 17:52:42.691 [main] DEBUG Esercizio.ClienteGenerator - Cliente Thea Ferretti creato
+16-02-2026 17:52:42.692 [main] DEBUG Esercizio.ClienteGenerator - Cliente Ivonne Valentini creato
+16-02-2026 17:52:42.692 [main] DEBUG Esercizio.ClienteGenerator - Cliente Furio Martino creato
+16-02-2026 17:52:42.693 [main] DEBUG Esercizio.ClienteGenerator - Cliente Manuele Marian creato
+16-02-2026 17:52:42.693 [main] DEBUG Esercizio.ClienteGenerator - Cliente Renzo Ferrari creato
+16-02-2026 17:52:42.693 [main] DEBUG Esercizio.ClienteGenerator - Cliente Secondo Serr creato
+16-02-2026 17:52:42.694 [main] DEBUG Esercizio.ClienteGenerator - Cliente Gianmarco D'angelo creato
+16-02-2026 17:52:42.694 [main] DEBUG Esercizio.ClienteGenerator - Cliente Eriberto Morelli creato
+16-02-2026 17:52:42.695 [main] DEBUG Esercizio.ClienteGenerator - Cliente Germano Marini creato
+16-02-2026 17:52:42.695 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giulietta Lombardi creato
+16-02-2026 17:52:42.695 [main] DEBUG Esercizio.ClienteGenerator - Cliente Renato Silvestri creato
+16-02-2026 17:52:42.695 [main] INFO  Esercizio.ClienteGenerator - Generati 25 clienti fake.
+16-02-2026 17:52:42.728 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:52:48.737 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:52:48.807 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:53:23.343 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:53:28.569 [main] ERROR Esercizio.ReportClienti - NumberFormatExcetption For input string: "ciap"
+16-02-2026 17:53:28.571 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:53:35.675 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:53:40.746 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giancarlo Gallo creato
+16-02-2026 17:53:40.748 [main] DEBUG Esercizio.ClienteGenerator - Cliente Sabino Mazza creato
+16-02-2026 17:53:40.749 [main] DEBUG Esercizio.ClienteGenerator - Cliente Iacopo Costa creato
+16-02-2026 17:53:40.749 [main] DEBUG Esercizio.ClienteGenerator - Cliente Umberto Farin creato
+16-02-2026 17:53:40.750 [main] DEBUG Esercizio.ClienteGenerator - Cliente Albino Messina creato
+16-02-2026 17:53:40.750 [main] DEBUG Esercizio.ClienteGenerator - Cliente Marcella Lombardo creato
+16-02-2026 17:53:40.751 [main] DEBUG Esercizio.ClienteGenerator - Cliente Tristano Romano creato
+16-02-2026 17:53:40.751 [main] DEBUG Esercizio.ClienteGenerator - Cliente Ninfa Santoro creato
+16-02-2026 17:53:40.751 [main] DEBUG Esercizio.ClienteGenerator - Cliente Quarto Mazza creato
+16-02-2026 17:53:40.752 [main] DEBUG Esercizio.ClienteGenerator - Cliente Ione Conte creato
+16-02-2026 17:53:40.752 [main] DEBUG Esercizio.ClienteGenerator - Cliente Guido Esposito creato
+16-02-2026 17:53:40.752 [main] DEBUG Esercizio.ClienteGenerator - Cliente Audenico Ferrara creato
+16-02-2026 17:53:40.753 [main] DEBUG Esercizio.ClienteGenerator - Cliente Lorenzo Vitali creato
+16-02-2026 17:53:40.753 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giancarlo Greco creato
+16-02-2026 17:53:40.755 [main] DEBUG Esercizio.ClienteGenerator - Cliente Damiano Ricci creato
+16-02-2026 17:53:40.755 [main] DEBUG Esercizio.ClienteGenerator - Cliente Radio Giordano creato
+16-02-2026 17:53:40.756 [main] DEBUG Esercizio.ClienteGenerator - Cliente Lino Caputo creato
+16-02-2026 17:53:40.756 [main] DEBUG Esercizio.ClienteGenerator - Cliente Raniero Giordano creato
+16-02-2026 17:53:40.757 [main] DEBUG Esercizio.ClienteGenerator - Cliente Nico Ricci creato
+16-02-2026 17:53:40.757 [main] DEBUG Esercizio.ClienteGenerator - Cliente Guendalina Ricci creato
+16-02-2026 17:53:40.758 [main] DEBUG Esercizio.ClienteGenerator - Cliente Luna Gallo creato
+16-02-2026 17:53:40.758 [main] DEBUG Esercizio.ClienteGenerator - Cliente Nico Costa creato
+16-02-2026 17:53:40.759 [main] DEBUG Esercizio.ClienteGenerator - Cliente Vinicio Donati creato
+16-02-2026 17:53:40.759 [main] DEBUG Esercizio.ClienteGenerator - Cliente Isabel Barone creato
+16-02-2026 17:53:40.759 [main] DEBUG Esercizio.ClienteGenerator - Cliente Marieva Amato creato
+16-02-2026 17:53:40.760 [main] DEBUG Esercizio.ClienteGenerator - Cliente Clodovea Ross creato
+16-02-2026 17:53:40.760 [main] DEBUG Esercizio.ClienteGenerator - Cliente Caio Barbieri creato
+16-02-2026 17:53:40.760 [main] DEBUG Esercizio.ClienteGenerator - Cliente Noemi Esposito creato
+16-02-2026 17:53:40.761 [main] DEBUG Esercizio.ClienteGenerator - Cliente Nico Rizzi creato
+16-02-2026 17:53:40.761 [main] DEBUG Esercizio.ClienteGenerator - Cliente Elda Ferraro creato
+16-02-2026 17:53:40.762 [main] DEBUG Esercizio.ClienteGenerator - Cliente Gaetano Rizzo creato
+16-02-2026 17:53:40.762 [main] DEBUG Esercizio.ClienteGenerator - Cliente Demi Milani creato
+16-02-2026 17:53:40.763 [main] DEBUG Esercizio.ClienteGenerator - Cliente Eustachio Neri creato
+16-02-2026 17:53:40.763 [main] DEBUG Esercizio.ClienteGenerator - Cliente Fatima Ross creato
+16-02-2026 17:53:40.764 [main] DEBUG Esercizio.ClienteGenerator - Cliente Raoul Bellini creato
+16-02-2026 17:53:40.764 [main] DEBUG Esercizio.ClienteGenerator - Cliente Ivano De Angelis creato
+16-02-2026 17:53:40.765 [main] DEBUG Esercizio.ClienteGenerator - Cliente Mauro Marian creato
+16-02-2026 17:53:40.765 [main] DEBUG Esercizio.ClienteGenerator - Cliente Egidio Ferraro creato
+16-02-2026 17:53:40.767 [main] DEBUG Esercizio.ClienteGenerator - Cliente Teseo Bianchi creato
+16-02-2026 17:53:40.767 [main] DEBUG Esercizio.ClienteGenerator - Cliente Vera Russo creato
+16-02-2026 17:53:40.768 [main] DEBUG Esercizio.ClienteGenerator - Cliente Umberto Fontana creato
+16-02-2026 17:53:40.768 [main] DEBUG Esercizio.ClienteGenerator - Cliente Diamante Santoro creato
+16-02-2026 17:53:40.768 [main] DEBUG Esercizio.ClienteGenerator - Cliente Tolomeo Farin creato
+16-02-2026 17:53:40.769 [main] DEBUG Esercizio.ClienteGenerator - Cliente Giulio Parisi creato
+16-02-2026 17:53:40.769 [main] DEBUG Esercizio.ClienteGenerator - Cliente Olimpia Barbieri creato
+16-02-2026 17:53:40.769 [main] DEBUG Esercizio.ClienteGenerator - Cliente Adriano Giuliani creato
+16-02-2026 17:53:40.770 [main] DEBUG Esercizio.ClienteGenerator - Cliente Brigitta Ruggiero creato
+16-02-2026 17:53:40.770 [main] DEBUG Esercizio.ClienteGenerator - Cliente Sabatino Caputo creato
+16-02-2026 17:53:40.770 [main] DEBUG Esercizio.ClienteGenerator - Cliente Avide Rinaldi creato
+16-02-2026 17:53:40.771 [main] DEBUG Esercizio.ClienteGenerator - Cliente Italo Coppola creato
+16-02-2026 17:53:40.771 [main] INFO  Esercizio.ClienteGenerator - Generati 50 clienti fake.
+16-02-2026 17:53:40.803 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:53:55.169 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:53:55.235 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:54:43.287 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:54:43.348 [main] INFO  Esercizio.ReportClienti - Fine applicazione!
+16-02-2026 17:57:56.827 [main] INFO  Esercizio.ReportClienti - Avvio applicazione...
+16-02-2026 17:57:56.970 [main] INFO  Esercizio.ReportClienti - Fine applicazione!

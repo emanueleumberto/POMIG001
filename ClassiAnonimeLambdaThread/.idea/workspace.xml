@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffb87997-2086-4394-bf34-9f405379d448" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Esercizio/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Esercizio/GestioneBiblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Esercizio/classes/Biblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Esercizio/classes/Lettore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Esercizio/classes/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Esercizio/exceptions/LettoreException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Esercizio/exceptions/LibroException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/generics/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/generics/TestInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/generics/TestString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/generics/Utente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CollectionJava/src/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/IntroJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/src/Esercizio/GestioneCorso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/src/Esercizio/Soluzione.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/src/Esercizio/Studente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/src/Esercizio/TracciaEsercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/src/Esercizio/TracciaEsercizioClassi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroJava/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/lib/commons-io-2.13.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/lib/commons-lang3-3.20.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/lib/javafaker-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/lib/logback-classic-1.4.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/lib/logback-core-1.4.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/lib/slf4j-api-2.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/lib/snakeyaml-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Esercizio/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Esercizio/ReportClienti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Esercizio/exception/DatiIncopletiException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Esercizio/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Esercizio/service/ClienteFileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Esercizio/service/ClienteGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/Utente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogFileIO/src/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Automobile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Camper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio1/Dipartimento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio1/Dipendente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio1/DipendenteFullTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio1/DipendentePartTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio1/Dirigente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio1/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio1/GestioneDipendenti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio2/Biblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio2/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio2/GestioneBiblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio2/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio2/Utente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/Audio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/ElementoMultimediale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/ElementoRiproducibile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/GestioneLuminosita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/GestionePlayerMultimediale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/GestioneVolume.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/Immagine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Esercizio3/Video.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Moto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Navigatore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Smartphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/TestFiglio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/TestModificatori/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/TestModificatori/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/TestModificatori/TestFiglio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP2Java/src/Veicolo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/CustomException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/GestioneTeatro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/classes/Donna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/classes/Teatro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/classes/Uomo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/classes/Utente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/exception/PostiTerminatiException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/exception/PostoGiaOccupatoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Esercizio/exception/PostoNonValidoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPException/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPJava/src/Automobile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPJava/src/Esercizio/Chiamata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPJava/src/Esercizio/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPJava/src/Esercizio/GestoreTelefonico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPJava/src/Esercizio/Sim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPJava/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPJava/src/TipoAlimentazione.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamJava/src/Esercizio/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamJava/src/Esercizio/Esercizio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamJava/src/Esercizio/GestioneOrdiniOnline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamJava/src/Esercizio/Ordine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamJava/src/Esercizio/Prodotto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamJava/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreamJava/src/User.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "emanueleumberto"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/emanueleumberto/POMIG001.git",
+    "accountId": "b26493b7-07dd-4a94-bc1e-756325e02e79"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="39se4CNDpcGY2WfB3lh7Lwn5caO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/emau7/Desktop/POMIG001/ClassiAnonimeLambdaThread/src/Main.java",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffb87997-2086-4394-bf34-9f405379d448" name="Changes" comment="" />
+      <created>1771489017309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771489017309</updated>
+    </task>
+    <servers />
+  </component>
+</project>

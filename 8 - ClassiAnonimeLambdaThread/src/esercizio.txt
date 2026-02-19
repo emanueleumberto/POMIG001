@@ -1,0 +1,46 @@
+Sistema di Analisi Risultati Fitness Tracker
+Realizzare un’applicazione Java console che simuli un sistema di analisi
+dei dati provenienti da dispositivi fitness (smartwatch).
+
+L’applicazione dovrà:
+- gestire collezioni di attività sportive
+- analizzare dati tramite Stream API
+- eseguire elaborazioni parallele tramite Thread
+- utilizzare Lambda expressions per filtri e trasformazioni
+
+Classe Attivita
+ - int id
+ - String utente
+ - String tipoAttivita (Corsa, Camminata, Bici, Nuoto)
+ - double distanzaKm
+ - int calorie
+ - int durataMinuti
+ - LocalDate data
+
+costruttore completo
+getter
+toString()
+
+Nel Main
+- Creare lista di attività
+- Inserire alemeno 15 attività
+- Più utenti differenti
+- Tipologia di attività miste
+
+- Stampare attività con: calorie > 400
+- Creare lista utenti senza duplicati.
+- Stampare attività ordinate per: durata decrescente
+- Calcolare i km totali percorsi da tutti gli utenti.
+- Raggruppamento per tipo attività:
+    Corsa → 6 attività
+    Bici → 4 attività
+    Nuoto → 3 attività
+- Calcolare: utente con più calorie bruciate complessive.
+
+Creare la classe:
+AnalisiFitnessTask implements Runnable
+
+Ogni thread riceve la lista attività.
+Thread 1 - Calcola distanza totale.
+Thread 2 - Trova attività più lunga.
+Thread 3 - Statistiche calorie per utente.
