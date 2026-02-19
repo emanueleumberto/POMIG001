@@ -11,7 +11,7 @@ L’applicazione dovrà:
 Classe Attivita
  - int id
  - String utente
- - String tipoAttivita (Corsa, Camminata, Bici, Nuoto)
+ - TipoAttivita tipoAttivita [Corsa, Camminata, Bici, Nuoto]
  - double distanzaKm
  - int calorie
  - int durataMinuti
