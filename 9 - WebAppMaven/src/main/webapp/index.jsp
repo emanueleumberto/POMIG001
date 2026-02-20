@@ -28,7 +28,7 @@
               String saluto = "Ciao, Mondo!";
               Date data = new Date();
               for(int i=0; i<3; i++) {
-                   out.print(saluto.toLowerCase() + " - " + data);
+                   out.print(saluto.toLowerCase() + " - " + data.);
               }
 
         %>
