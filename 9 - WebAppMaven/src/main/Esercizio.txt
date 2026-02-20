@@ -1,0 +1,49 @@
+Sistema di Registrazione Partecipanti ad un Evento
+
+Realizzare una piccola applicazione web Java dove:
+L’utente inserisce dati tramite un form JSP
+
+I dati vengono inviati ad una Servlet
+La Servlet:
+  - valida ed elabora i dati
+  - salva le informazioni su file
+  - crea una lista di oggetti letta da un file
+  - Una seconda JSP mostra i risultati sotto forma di lista dinamica
+
+Classe Partecipante
+ - String nome
+ - String cognome
+ - String email
+ - String tipoBiglietto (Standard, VIP, Studente)
+
+costruttore completo
+getter
+toString() formattato per salvataggio file (Mario,Rossi,mario@email.it,VIP)
+
+Creare form.jsp
+input text → nome
+input text → cognome
+input email → email
+select → tipoBiglietto
+pulsante submit -> POST -> /registrazione
+
+Creare:
+RegistrazioneServlet -> /registrazione
+tramite il metodo POST:
+ - Lettura parametri
+ - Validazione base (campi non vuoti, email che contiene @)
+
+se errore:
+ -> tornare alla JSP con messaggio errore.
+
+se ok:
+ -> Creazione oggetto
+ -> Persistenza su file
+ -> Lettura file e creazione List
+ -> Invio dati alla JSP lista.jsp
+
+Creare lista.jsp.
+Stampare: elenco partecipanti in una lista HTML:
+Prevedere un link di ritorno alla pagina form.jsp
+
+Utilizzare la dipendenza Logback per la gestione dei log
