@@ -1,0 +1,113 @@
+Sistema di Gestione Prenotazioni Eventi
+Realizzare una Web Application Java MVC-like utilizzando:
+ - Servlet
+ - JSP
+ - RequestDispatcher.forward()
+ - RequestDispatcher.include()
+ - Generazione dati fake con JavaFaker
+ - Logging avanzato con SLF4J + Logback
+ - Persistenza su file tramite Apache Commons-IO
+
+Si vuole sviluppare un piccolo sistema web per la gestione delle prenotazioni ad eventi formativi.
+
+L’utente può:
+ - visualizzare eventi disponibili
+ - prenotarsi ad un evento
+ - visualizzare l’elenco prenotazioni
+ - salvare le prenotazioni su file
+
+✔ Librerie esterne
+-> JavaFaker → dati eventi fake
+-> SLF4J + Logback → logging
+-> Commons-IO → scrittura file
+
+src/
+ ├── model/
+ │     ├── Evento.java
+ │     └── Prenotazione.java
+ │
+ ├── service/
+ │     └── EventoService.java
+ │
+ ├── servlet/
+ │     ├── HomeServlet.java
+ │     ├── PrenotazioneServlet.java
+ │     └── ListaPrenotazioniServlet.java
+ │
+ └── util/
+       └── FileManager.java
+
+webapp/
+ ├── jsp/
+ │     ├── home.jsp
+ │     ├── prenotazione.jsp
+ │     ├── lista.jsp
+ │     └── fragments/
+ │           ├── header.jsp
+ │           └── footer.jsp
+
+1️⃣ Generazione eventi (JavaFaker)
+All’avvio applicazione:
+ - generare almeno 10 eventi fake
+campi richiesti:
+ - id
+ - titolo evento
+ - docente
+ - città
+ - data
+Gli eventi devono essere salvati in memoria (List<Evento>).
+
+2️⃣ Home page
+Servlet: HomeServlet
+Funzioni:
+ - recupera lista eventi
+ - inserisce lista nella request
+ - usa forward() verso home.jsp
+La JSP deve:
+ - mostrare eventi in tabella
+ - avere pulsante Prenota
+
+3️⃣ Prenotazione evento
+Servlet: PrenotazioneServlet
+Riceve: idEvento - nomeUtente - email
+Operazioni:
+ - crea oggetto Prenotazione
+ - aggiunge alla lista prenotazioni
+ - registra log INFO con Logback
+ - salva prenotazione su file tramite Commons-IO
+ - forward → lista prenotazioni
+
+4️⃣ Lista prenotazioni
+Servlet: ListaPrenotazioniServlet
+Funzioni:
+ - recupera lista prenotazioni
+ - passa dati alla JSP
+La JSP deve:
+ - stampare elenco prenotazioni
+ - mostrare numero totale prenotazioni
+
+5️⃣ Uso obbligatorio di include()
+Ogni JSP deve includere:
+- header.jsp
+- footer.jsp
+Il header.jsp deve mostrare:
+ - data corrente
+ - numero prenotazioni totali
+
+Usare:
+- <jsp:include page="fragments/header.jsp"/>
+- oppure dispatcher include da servlet.
+
+Persistenza su file (Commons-IO)
+File:
+/data/prenotazioni.txt
+Formato esempio:
+Mario Rossi | Java Advanced | 2026-03-01
+
+Logging (Logback)
+Configurare:
+log INFO → prenotazione creata
+log WARN → dati mancanti
+log ERROR → errore scrittura file
+Formato log richiesto:
+DATA - LIVELLO - Servlet - Messaggio

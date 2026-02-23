@@ -17,6 +17,14 @@ public class Partecipante {
         this.tipoBiglietto = tipoBiglietto;
     }
 
+    public Partecipante(int id, String nome, String cognome, String email, String tipoBiglietto) {
+        this.id = id;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.email = email;
+        this.tipoBiglietto = tipoBiglietto;
+    }
+
     public String getNome() {
         return nome;
     }

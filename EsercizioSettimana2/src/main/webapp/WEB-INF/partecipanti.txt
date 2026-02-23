@@ -1,0 +1,23 @@
+1,Ria,Lambert,vyreje@example.com,Standard
+2,Andrew,Richards,dosobytepu@example.com,Studente
+1,Xander,Riggs,nuqumizifa@example.com,Studente
+2,Charity,Harper,dujyr@example.com,Standard
+1,Chaim,Hays,diqoz@example.com,Vip
+2,Chaim,Hays,diqoz@example.com,Vip
+1,Raven,Hurst,bakucoqit@example.com,Vip
+1,Sylvia,Pate,lero@example.com,Studente
+1,Bruce,Malone,daxa@example.com,Open this select menu
+1,Abra,Lawrence,bemoze@example.com,Vip
+1,Ivan,Soto,wuhun@example.com,Vip
+1,Brady,Castaneda,cugehodo@example.com,Open this select menu
+2,Barry,Patel,fuqi@example.com,Standard
+1,Gregory,Barrera,pojupepoca@example.com,Standard
+1,Asher,Warren,migutetoby@example.com,Studente
+1,Chaim,Saunders,xomiwif@example.com,Vip
+1,Kato,Bryan,koquceke@example.com,Studente
+1,Theodore,Huber,xuge@example.com,Standard
+1,Wanda,Mcgowan,donojypovy@example.com,Vip
+1,Nora,Castro,wovev@example.com,Standard
+1,Uriel,Kerr,dodycic@example.com,Standard
+1,Alea,Bryan,gadu@example.com,Standard
+1,Ava,Booth,juquqof@example.com,Vip

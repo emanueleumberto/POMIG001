@@ -1,4 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%
+    String errore = (String) request.getAttribute("errore");
+%>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,6 +35,16 @@
                <button type="submit" class="form-control btn btn-primary">Register</button>
              </div>
            </form>
+           <%
+                if(errore != null) {
+           %>
+                <div class="alert alert-danger" role="alert">
+                      <%= errore %>
+                </div>
+           <%
+                }
+           %>
+
        </main>
 
        <footer>

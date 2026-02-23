@@ -1,13 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page  import= "java.util.List" %>
-<%@ page  import= "model.Partecipante" %>
-
-<%@ taglib prefix="c" uri="https://jakarta.ee/jsp/jstl/core" %>
-
-<%
-    List<Partecipante> lista = (List<Partecipante>) request.getAttribute("listaPartecipante");
-%>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,33 +14,26 @@
   <body>
   <div class="container">
     <header>
-           <h1>Lista Partecipanti</h1>
+           <h1>Register User</h1>
        </header>
        <main>
 
-        <ul class="list-group list-group-flush">
-            <% for(Partecipante p : lista) { %>
-                <li class="list-group-item"><%= p.getNome() + " " + p.getCognome() %> </li>
-            <% } %>
-         </ul>
-
-         <hr />
-
-        <ul class="list-group list-group-flush">
-         <c:forEach var="p" items="${listaPartecipante}">
-            <li class="list-group-item">
-                ${p.getNome()} ${p.getCognome()}
-            </li>
-        </ul>
-
+           <form method="POST">
+           <div class="form-group m-3">
+               <input type="text" class="form-control" name="firstname" placeholder="Inserisci nome" /><br />
+               <input type="text" class="form-control" name="lastname" placeholder="Inserisci cognome" /><br />
+               <input type="text" class="form-control" name="email" placeholder="Inserisci email" /><br />
+               <input type="text" class="form-control" name="username" placeholder="Inserisci username" /><br />
+               <input type="password" class="form-control" name="password" placeholder="Inserisci password" /><br />
+               <button type="submit" class="form-control btn btn-primary">Register</button>
+             </div>
+           </form>
        </main>
-       <a class="btn btn-primary" href="form.jsp" role="button">Registrazione</a>
 
        <footer>
            <p>Web application Java</p>
        </footer>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
