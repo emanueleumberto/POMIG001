@@ -1,0 +1,90 @@
+Sistema di Autenticazione e Autorizzazione
+Estendere il sistema di gestione prenotazioni introducendo un modulo di
+autenticazione e autorizzazione utenti basato su tecnologie Java EE standard.
+Lo scopo è simulare un sistema reale di accesso controllato utilizzando:
+ - Sessioni HTTP
+ - Cookie
+ - Controllo accessi tramite ruoli
+ - Separazione tra autenticazione e autorizzazione
+
+ Accessibilità delle pagine
+ Home                   ->	Pubblica (anche senza login)
+ Prenotazione evento    ->	Solo utente autenticato
+ Lista prenotazioni     ->	Solo utente autenticato con ruolo ADMIN
+
+ Gestione Utenti  Il sistema deve prevedere:
+  -  registrazione nuovi utenti con ruolo USER di default
+  -  login utenti esistenti
+  -  logout
+  -  gestione ruoli
+  -  Ruoli richiesti
+  USER
+    -> può visualizzare eventi
+    -> può effettuare prenotazioni
+  ADMIN
+    -> tutte le funzionalità USER
+    -> accesso alla lista completa prenotazioni
+
+Modello Dati Utente
+ - username
+ - password
+ - ruolo
+eventuali metodi getter/setter
+Vincoli:
+ - username univoco
+ - ruolo assegnato automaticamente alla registrazione (USER)
+ - presenza di almeno un ADMIN preconfigurato all’avvio applicazione
+
+Sistema di Login
+Il login deve:
+ - ricevere username e password tramite form POST
+ - verificare le credenziali
+ - creare una HttpSession
+ - salvare l’utente autenticato nella sessione
+ - reindirizzare alla home in caso di successo
+ - mostrare messaggio di errore in caso di fallimento
+Registrazione Utente
+La registrazione deve:
+ - permettere inserimento username e password
+ - validare campi obbligatori
+ - impedire username duplicati
+ - creare un nuovo utente con ruolo USER
+ - reindirizzare alla pagina di login dopo registrazione riuscita
+
+Gestione Cookie
+Deve essere utilizzato almeno un cookie per:
+ - memorizzare username dell’ultimo login
+ - durata configurabile (es. 24 ore)
+Comportamento richiesto:
+ - alla riapertura della pagina login, il campo username
+   deve essere precompilato se il cookie esiste.
+
+Gestione Sessione
+La sessione deve:
+ - essere creata solo dopo login riuscito
+ - contenere l’utente autenticato
+ - essere invalidata al logout
+Requisiti aggiuntivi:
+ - timeout sessione configurabile
+ - gestione accesso con sessione scaduta
+
+Logout
+Il logout deve:
+ - invalidare completamente la sessione
+ - eliminare i dati utente lato server
+ - reindirizzare alla home pubblica
+
+Integrazione con Header comune
+Il fragment header.jsp deve diventare dinamico:
+ - Se utente loggato:
+    -> mostrare username
+    -> mostrare ruolo
+    -> link logout
+Se utente NON loggato:
+    -> link login
+    -> link registrazione
+
+Nuove Pagine Richieste
+Da aggiungere alla struttura JSP:
+ - login.jsp
+ - register.jsp

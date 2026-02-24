@@ -16,15 +16,13 @@
        <c:choose>
            <c:when test="${not empty userLogin}">
 
-            <span class="navbar-text">
-               <p> Hello <c:out value="${userLogin.name}" />!</p>
-            </span>
-            <span class="navbar-text">
-                <a class="nav-link" href="/logout">logout</a>
+            <span class="navbar-nav">
+               <p class="nav-link"> Hello <c:out value="${userLogin.name}" />!</p>
+               <a class="nav-link" href="/logout">logout</a>
             </span>
            </c:when>
            <c:otherwise>
-               <span class="navbar-text">
+               <span class="navbar-nav">
                      <a class="nav-link" href="/login">login</a>
                      <a class="nav-link" href="/register">register</a>
                </span>
