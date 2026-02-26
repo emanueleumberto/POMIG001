@@ -330,3 +330,110 @@ DELETE FROM pomig001.utenti WHERE id_utente = 1;
 SELECT * FROM pomig001.utenti WHERE citta = "Roma";
 SELECT * FROM pomig001.passaporti;
 
+-- View
+-- Una vista è una tabella virtuale basta sul risultato di una SELECT
+/*
+	CREATE [OR REPLACE] VIEW view_name AS
+		SELECT [DISTINCT] column_name1, column_name2, ..., column_nameN |*| aggregate_function(expression)
+		FROM db_name.table_name1 AS tb1
+        INNER JOIN db_name.table_name2 AS tb2
+        ON tb1.column_name = tb2.column_name
+        [WHERE Search Condition]
+        [GROUP BY]
+        [HAVING Search Condition]
+        [ORDER BY]
+        [LIMIT]
+*/
+
+
+CREATE OR REPLACE VIEW view_passaporti_utenti AS
+	SELECT u.id_utente, u.nome, u.cognome, u.citta, u.eta, u.email, u.codice_fiscale, p.numero_passaporto, p.data_rilascio 
+		FROM pomig001.utenti AS u 
+        JOIN pomig001.passaporti AS p 
+        ON u.id_utente = p.id_utente;
+        
+SELECT * FROM pomig001.view_passaporti_utenti;
+
+-- Store Procedure
+/*
+	DELIMITER &&
+    
+    CREATE PROCEDURE procedure_name [IN | OUT | INOUT parameter_name datatype... ]
+    BEGIN
+		procedure declaretion
+    END &&
+    DELIMITER;
+*/
+
+DELIMITER &&
+	CREATE PROCEDURE getAllUsers()
+		BEGIN
+			SELECT u.id_utente, u.nome AS firstname, u.cognome AS lastname, 
+				u.citta AS city, u.eta AS age, u.email, u.codice_fiscale AS fiscal_code, 
+                p.numero_passaporto AS number_passport, p.data_rilascio AS passport_date 
+			FROM pomig001.utenti AS u 
+			JOIN pomig001.passaporti AS p 
+			ON u.id_utente = p.id_utente;
+		END &&
+DELIMITER ;
+
+DELIMITER &&
+	CREATE PROCEDURE getUser(IN userId INT)
+		BEGIN
+			SELECT u.id_utente, u.nome AS firstname, u.cognome AS lastname, 
+				u.citta AS city, u.eta AS age, u.email, u.codice_fiscale AS fiscal_code, 
+                p.numero_passaporto AS number_passport, p.data_rilascio AS passport_date 
+			FROM pomig001.utenti AS u 
+			JOIN pomig001.passaporti AS p 
+			ON u.id_utente = p.id_utente WHERE u.id_utente = userId;
+		END &&
+DELIMITER ;            
+
+DELIMITER &&
+	CREATE PROCEDURE countUsers(OUT totalUser INT)
+		BEGIN
+			SELECT COUNT(*) INTO totalUser
+			FROM pomig001.utenti;
+		END &&
+DELIMITER ;  
+
+DELIMITER &&
+	CREATE PROCEDURE countUsersByCity(IN city VARCHAR(50), OUT totalUser INT)
+		BEGIN
+			SELECT COUNT(*) INTO totalUser
+			FROM pomig001.utenti WHERE citta = city;
+		END &&
+DELIMITER ;
+
+DELIMITER &&
+	CREATE PROCEDURE insert_passport(IN numPassport INT, IN user INT, IN passportDate DATE, OUT resp VARCHAR(50) )
+		BEGIN
+			DECLARE already_exists INT;
+        
+			SELECT COUNT(*) INTO already_exists
+			FROM pomig001.utenti AS u 
+			JOIN pomig001.passaporti AS p 
+			ON u.id_utente = p.id_utente WHERE p.numero_passaporto = numPassport;
+            
+            IF already_exists = 0 THEN 
+				INSERT INTO pomig001.passaporti (numero_passaporto, data_rilascio, id_utente) 
+						  VALUES(numPassport, passportDate, user);
+				SET resp = "Passaporto inserito";
+			ELSE 
+				SET resp = "Passaporto già presente";
+			END IF;
+            
+		END &&
+DELIMITER ;
+
+
+CALL pomig001.getAllUsers();
+CALL pomig001.getUser(2);
+CALL pomig001.countUsers(@tot);
+SELECT @tot;
+CALL pomig001.countUsersByCity("Roma", @tot);
+SELECT "Roma" AS city, @tot AS total_user;
+-- Function
+/*
+	
+*/
