@@ -1,0 +1,102 @@
+Sistema Web di Gestione Corsi Formativi
+Realizzare una Web Application Java MVC-like per la gestione di corsi formativi e iscrizioni utenti
+Browser->Front Controller(DispatcherServlet)->Controller Servlet->Service Layer->DAO Layer->MySQL Database
+
+Ruoli USER | ADMIN
+
+Funzionalità richieste
+Un utente può:
+ - registrarsi
+ - effettuare login
+ - visualizzare corsi disponibili
+ - iscriversi ad un corso
+ - visualizzare le proprie iscrizioni
+
+ Un utente ADMIN può:
+ - creare nuovi corsi
+ - visualizzare tutte le iscrizioni
+ - eliminare corsi
+
+Deve essere generato automaticamente al primo avvio dell’applicazione.
+
+Tabella users
+| Campo    | Tipo                  |
+| -------- | --------------------- |
+| id       | INT PK AUTO_INCREMENT |
+| username | VARCHAR(50) UNIQUE    |
+| password | VARCHAR(255)          |
+| role     | VARCHAR(20)           |
+
+Tabella courses
+| Campo        | Tipo         |
+| ------------ | ------------ |
+| id           | INT PK       |
+| title        | VARCHAR(100) |
+| teacher      | VARCHAR(100) |
+| duration     | INT          |
+| max_students | INT          |
+
+Tabella enrollments
+| Campo           | Tipo   |
+| --------------- | ------ |
+| id              | INT PK |
+| user_id         | INT FK |
+| course_id       | INT FK |
+| enrollment_date | DATE   |
+
+DatabaseInitializer
+- connessione MySQL
+- CREATE DATABASE IF NOT EXISTS
+- CREATE TABLE IF NOT EXISTS
+- inserimento ADMIN di default
+- inserimento corsi demo
+
+Struttura progetto richiesta
+src/main/java
+│
+├── config/
+│     └── DatabaseInitializer.java
+│
+├── model/
+│     ├── User.java
+│     ├── Course.java
+│     └── Enrollment.java
+│
+├── dao/
+│     ├── ConnectionManager.java
+│     ├── UserDAO.java
+│     ├── CourseDAO.java
+│     └── EnrollmentDAO.java
+│
+├── service/
+│     ├── AuthService.java
+│     └── CourseService.java
+│
+├── servlet/
+│     ├── DispatcherServlet.java
+│     ├── LoginServlet.java
+│     ├── RegisterServlet.java
+│     ├── CourseServlet.java
+│     └── EnrollmentServlet.java
+└──
+
+/app/home → CourseServlet
+/app/login → LoginServlet
+/app/enroll → EnrollmentServlet
+
+/jsp
+   ├── home.jsp
+   ├── login.jsp
+   ├── register.jsp
+   ├── courses.jsp
+   ├── enrollments.jsp
+   └── fragments/
+         ├── header.jsp
+         └── footer.jsp
+
+| Pagina     | Protezione      |
+| ---------- | --------------- |
+| home       | pubblica        |
+| corsi      | login richiesto |
+| iscrizioni | login richiesto |
+| admin      | ADMIN only      |
