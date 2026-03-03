@@ -1,0 +1,54 @@
+Sistema di Registrazione e Login con JPA (Hibernate)
+Realizzare una Web Application Java EE MVC-like per la gestione
+della registrazione e autenticazione utenti
+
+L’applicazione deve rispettare il pattern MVC:
+Browser -> Servlet Controller -> Service Layer -> Repository (JPA) -> Database MySQL
+
+Il database deve essere configurato tramite: persistence.xml
+Il database deve contenere una sola tabella: users.
+
+Pagine richieste
+/jsp
+   ├── login.jsp
+   ├── register.jsp
+   └── home.jsp
+
+Registrazione
+Form con: name, lastName, age, email, password
+Validazioni: campi obbligatori, email unica, password max 10 caratteri (coerente con entity)
+Salvataggio utente tramite JPA: EntityManager.persist()
+Redirect verso login dopo registrazione riuscita.
+
+Login
+Form con: email, password
+Verifica credenziali tramite query JPA
+Se credenziali valide:
+    creazione HttpSession
+    salvataggio oggetto User in sessione
+    redirect verso home
+Se credenziali errate:
+    messaggio di errore nella stessa pagina
+
+Home Page
+Accessibile solo dopo login.
+Deve mostrare: Nome e Cognome dell’utente loggato, Email, Età
+Pulsante Logout
+
+Logout
+Invalida la sessione
+Redirect verso login
+
+model/
+   └── User.java
+
+repository/
+   └── UserRepository.java
+
+service/
+   └── AuthService.java
+
+servlet/
+   ├── LoginServlet.java
+   ├── RegisterServlet.java
+   └── LogoutServlet.java

@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "users")
 @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u")
 @NamedQuery(name = "User.findByEmail", query = "SELECT u FROM User u WHERE u.email = :email")
+@NamedQuery(name = "User.login", query = "SELECT u FROM User u WHERE u.email = :email AND u.password = :password")
 public class User {
 
     @Id
@@ -24,14 +25,23 @@ public class User {
     @Column(nullable = false, length = 10)
     private String password;
 
+    @Embedded
+    private Address address;
+
+    // Solo se voglio una relazione bidirezionale
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Passport passport;
+
+
     public User() {}
 
-    public User(String name, String lastName, int age, String email, String password) {
+    public User(String name, String lastName, int age, String email, String password, Address address) {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
         this.email = email;
         this.password = password;
+        this.address = address;
     }
 
     public int getId() {
@@ -67,6 +77,18 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+    public Address getAddress() {
+        return address;
+    }
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+    public Passport getPassport() {
+        return passport;
+    }
+    public void setPassport(Passport passport) {
+        this.passport = passport;
+    }
 
     @Override
     public String toString() {
@@ -77,6 +99,8 @@ public class User {
                 ", age=" + age +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", address=" + address +
+                ", passport=" + passport.getNumberPassport() +
                 '}';
     }
 }

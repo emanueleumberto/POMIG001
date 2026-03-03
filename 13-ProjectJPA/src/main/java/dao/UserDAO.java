@@ -37,9 +37,16 @@ public class UserDAO {
         return query.getResultList();
     }
 
-    public static User getUserByEmail(String email) {
+    public static List<User> getUserByEmail(String email) {
         Query query = em.createNamedQuery("User.findByEmail");
         query.setParameter("email", email);
+        return query.getResultList();
+    }
+
+    public static User getUserLogin(String email, String password) {
+        Query query = em.createNamedQuery("User.login");
+        query.setParameter("email", email);
+        query.setParameter("password", password);
         return (User) query.getSingleResult();
     }
 }
