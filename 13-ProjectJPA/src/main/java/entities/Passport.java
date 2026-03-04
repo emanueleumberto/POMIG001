@@ -57,7 +57,7 @@ public class Passport {
                 "id=" + id +
                 ", numberPassport=" + numberPassport +
                 ", passportDate=" + passportDate +
-                ", user=" + user +
+                ", user=" + user.getName() + " " + user.getLastName() +
                 '}';
     }
 }

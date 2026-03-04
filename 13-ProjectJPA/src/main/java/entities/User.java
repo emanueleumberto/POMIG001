@@ -2,6 +2,9 @@ package entities;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "users")
 @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u")
@@ -32,6 +35,17 @@ public class User {
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Passport passport;
 
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    private Company company;
+
+    @ManyToMany
+    @JoinTable(
+            name = "users_courses",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "course_id")
+    )
+    private List<Course> courses = new ArrayList<>();
 
     public User() {}
 
@@ -89,6 +103,18 @@ public class User {
     public void setPassport(Passport passport) {
         this.passport = passport;
     }
+    public Company getCompany() {
+        return company;
+    }
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+    public List<Course> getCourses() {
+        return courses;
+    }
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
 
     @Override
     public String toString() {
@@ -100,7 +126,9 @@ public class User {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", address=" + address +
-                ", passport=" + passport.getNumberPassport() +
+                ", passport=" + passport +
+                ", company=" + company +
+                ", courses=" + courses.size() +
                 '}';
     }
 }
