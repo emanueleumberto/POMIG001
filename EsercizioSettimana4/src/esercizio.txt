@@ -1,0 +1,72 @@
+Gestione Pizzeria con Spring
+Creare un’applicazione Spring che gestisca una pizzeria, utilizzando Spring Beans
+e la configurazione tramite classe Java (senza XML).
+
+Requisiti:
+Creare una classe Pizza con attributi nome, ingredienti (lista di stringhe) e prezzo.
+Creare una classe Drink con attributi nome, gradazione e prezzo.
+Creare una classe Menu, che contenga una lista di pizze disponibili e la lista di drink.
+Creare una classe di configurazione Spring (PizzeriaConfig) per definire i Beans.
+Creare una classe Main per testare il funzionamento del sistema.
+
+1. Classe Pizza (Bean con dati di una pizza)
+Deve avere attributi privati con getter e setter.
+Deve includere un costruttore per inizializzare i valori.
+Deve avere un metodo toString per la stampa dei valori.
+
+2. Classe Drink (Bean con dati di un drink)
+Deve avere attributi privati con getter e setter.
+Deve includere un costruttore per inizializzare i valori.
+Deve avere un metodo toString per la stampa dei valori.
+
+3. Classe Menu (Bean con lista di pizze e drink)
+Deve contenere una proprietà nome, una lista di pizze e una lista di drink.
+Deve avere un metodo stampaMenu() che visualizza le pizze con ingredienti e prezzo
+e i drink con gradi e prezzo.
+
+4. Configurazione Spring (PizzeriaConfig)
+Definire i Beans per più tipi di Pizza e più tipi di Drink.
+Definire un Bean Menu, che raccoglie le pizze e i drink disponibili.
+
+5. Classe MainPizzeria per il Testing
+Creare il contesto di Spring.
+Recuperare il Bean Menu e stampare il menu della pizzeria.
+
+************* Menu Pizzeria NomePizzeria **************
+----- Pizze -----
+1. nomePizza (ingrediente1, ingrediente2, ...., ingredietnteN) 0.00
+2. nomePizza (ingrediente1, ingrediente2, ...., ingredietnteN) 0.00
+3. nomePizza (ingrediente1, ingrediente2, ...., ingredietnteN) 0.00
+......
+N. nomePizza (ingrediente1, ingrediente2, ...., ingredietnteN) 0.00
+
+----- Drink -----
+1. nomeDrink 0° 0.00
+2. nomeDrink 0° 0.00
+3. nomeDrink 0° 0.00
+........
+N. nomeDrink 0° 0.00
+
+
+Esercizio 2
+Modificare l'esercizio precedente
+Organizzando  il progetto con l'inserimento di Runner e Service
+Utilizzano accoppiamento debole sfruttando i concetti di DI e IOC ove possibile
+
+Espandere l’applicazione del menu della pizzeria introducendo nuove entità
+e migliorando la gestione degli ordini,
+utilizzando Spring Beans, Dependency Injection e un Service.
+
+Cliente (Cliente) → Rappresenta un cliente con nome e numero di telefono. Bean gestito da Spring.
+Ordine (Ordine) → Contiene il cliente e i prodotti ordinati, con un numero d’ordine univoco e la data Ordine.
+                    Il Service genera automaticamente un ID univoco per ogni ordine.
+Gestore Ordini (OrdineService) → Gestisce la creazione e la visualizzazione degli ordini.
+
+Classe MenuService (Gestione Pizze) Contiene una lista di pizze disponibili. Metodo stampaMenu() per mostrare il menu.
+Classe OrdineService (Gestione Ordini) Registra nuovi ordini.
+                    Metodo creaOrdine(Cliente cliente, List<Prodotto> listaProdotti).
+                    Metodo stampaOrdini() per mostrare gli ordini effettuati.
+
+Classe PizzeriaRunner
+Implementa CommandLineRunner per avviare automaticamente l’applicazione.
+    Stampa del menu, Simula la creazione di alcuni ordini e la stampa di tutti gli ordini effettuati con il calcolo del totale .
