@@ -1,6 +1,7 @@
 package com.example.spring_intro.configurations;
 
 import com.example.spring_intro.classes.User;
+import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,11 +24,31 @@ public class UserConfiguration {
         return new User(adminName, adminLastname, adminAge, adminCity, adminEmail);
     }
 
-    @Bean
+    @Bean("customUserParams")
     @Scope("prototype")
-    public User customUser(String firstName, String lastName,  int age, String city, String email) {
+    public User customUserParams(String firstName, String lastName,  int age, String city, String email) {
         // controlli
         return new User(firstName, lastName, age, city, email);
+    }
+
+    @Bean("customUser")
+    @Scope("prototype")
+    public User customUser() {
+        // controlli
+        return new User();
+    }
+
+    @Bean
+    @Scope("prototype")
+    public User fakeUser() {
+        Faker fake =  new Faker();
+        return new User(
+                fake.name().firstName(),
+                fake.name().lastName(),
+                fake.number().numberBetween(18,70),
+                fake.address().cityName(),
+                fake.internet().emailAddress()
+        );
     }
 
 }
