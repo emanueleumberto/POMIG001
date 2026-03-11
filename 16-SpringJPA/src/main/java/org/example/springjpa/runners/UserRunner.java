@@ -35,7 +35,7 @@ public class UserRunner implements CommandLineRunner {
 //        userService.findAll().forEach(System.out::println);
 //        userService.getByEmail("g.guerra@example.com").forEach(System.out::println);
 
-            userService.getByAgeBetween(45,60).forEach(System.out::println);
+//            userService.getByAgeBetween(45,60).forEach(System.out::println);
 
     }
 }

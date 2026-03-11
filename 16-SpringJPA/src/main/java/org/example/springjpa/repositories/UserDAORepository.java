@@ -16,7 +16,7 @@ public interface UserDAORepository extends JpaRepository<User, Long> {
     public List<User> findByEmailLike(String parteEmail);
     public boolean existsByEmail(String email);
 
-    @Query("SELECT u FROM User u WHERE u.firstname.length > :p")
-    public List<User> findByFirstnameLength(@Param("p") int p);
+//    @Query("SELECT u FROM User u WHERE u.firstname.length > :p")
+//    public List<User> findByFirstnameLength(@Param("p") int p);
 
 }
