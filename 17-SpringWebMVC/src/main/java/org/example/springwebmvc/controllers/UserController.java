@@ -14,12 +14,12 @@ public class UserController {
 
     @Autowired UserService userService;
 
-    @GetMapping("/login")
+    @GetMapping("/userlogin")
     public String getLogin() {
         return "loginPage";
     }
 
-    @PostMapping("/login")
+    @PostMapping("/userlogin")
     public ModelAndView ceckLogin(@RequestParam String email, @RequestParam String password) {
 //        System.out.println("email: " + email);
 //        System.out.println("password: " + password);

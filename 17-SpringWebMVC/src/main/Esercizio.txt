@@ -31,6 +31,7 @@ Controller (Spring MVC)
     AuthController.java
         GET /login: mostra form login
         POST /login: valida e autentica
+        GET /logout: invalida la sessione
         GET /register: mostra form registrazione
         POST /register: valida e registra
         GET /dashboard: mostra la pagina protetta

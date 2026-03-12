@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Page</title>
+</head>
+<body>
+<h1>Register Page</h1>
+<form method="POST" action="/register">
+    <input type="text" name="name" placeholder="Enter name" />
+    <input type="email" name="email" placeholder="Enter email" required/>
+    <input type="password" name="password" placeholder="Enter password" required/>
+    <input type="submit" value="Register" />
+    <div><span th:text="${message}"></span></div>
+</form>
+</body>
+</html>
